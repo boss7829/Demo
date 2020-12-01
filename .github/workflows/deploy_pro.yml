@@ -18,7 +18,7 @@ jobs:
     steps:
         - name: Check move from "TODO" to "IN PROGRESS"
           id: check
-          uses: vazexqi/salesforcedx-kanban-actions/project_card-check-movement@master
+          uses: boss7829/Demo/main
           with:
               token: ${{ secrets.GITHUB_TOKEN}}
               fromColumnId: ${{ github.event.changes.column_id.from }}
