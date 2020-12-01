@@ -36,7 +36,7 @@ jobs:
         - name: 'Authorize'
           run: |
             echo username value boss7829@gmail.com
-            sfdx force:auth:jwt:grant --clientid=3MVG9G9pzCUSkzZuKZObotJm5E3VhOQpQSvTxE_OK7PemlSY8TwWbg8ICsjyt0nY61LY7DfYsvEnGG1p45kCc
+            sfdx force:auth:jwt:grant --clientid=3MVG9G9pzCUSkzZuKZObotJm5E3VhOQpQSvTxE_OK7PemlSY8TwWbg8ICsjyt0nY61LY7DfYsvEnGG1p45kCc -username=boss7829@gmail.com
         - name: 'Convert Metadata'
           run: sfdx force:source:convert --rootdir=force-app --outputdir=convert
         - name: 'Run Test on Metadata'
