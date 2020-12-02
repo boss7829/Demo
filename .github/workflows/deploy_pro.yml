@@ -17,7 +17,7 @@ jobs:
     steps:
         - name: Check move from "TODO" to "IN PROGRESS"
           id: check
-          uses: actions/setup-node@v1
+          uses: actions/checkout@v2
           with:
               token: ${{ secrets.GITHUB_TOKEN}}
               fromColumnId: ${{ github.event.changes.column_id.from }}
