@@ -41,5 +41,4 @@ jobs:
           run: sfdx force:source:convert --rootdir=force-app --outputdir=convert
         - name: 'Run Test on Metadata'
           run: 
-            sfdx force:auth:jwt:grant --clientid=${{ secrets.CONSUMER_KEY }} --username=boss7829@gmail.com --jwtkeyfile server.key --setdefaultdevhubusername -a boss7829@gmail.com
-            sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests -u boss7829@gmail.com
+            sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests
