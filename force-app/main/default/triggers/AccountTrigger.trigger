@@ -4,6 +4,6 @@ trigger AccountTrigger on Account (before insert, before update, after insert, a
     }
     if(Trigger.isBefore) {
         AccountTriggerHandler.tempMethod(Trigger.new, Trigger.old);
-        System.debug('test');
+        System.debug('test1');
     }
 }
